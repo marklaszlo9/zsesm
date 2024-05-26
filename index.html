@@ -17,49 +17,53 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600') center/cover no-repeat;
-    color: white;
-    padding: 5rem 0;
-    text-align: center;
-    position: relative;
+  background-color: #556B2F;
+  color: white;
+  padding: 2rem 0; /* Adjusted for better spacing with menu */
+  text-align: center;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Center the menu items */
+  align-items: center;
+  margin-bottom: 2rem; /* Add space below the menu */
 }
 
-header nav h1 {
-    font-size: 2rem;
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin: 0;
 }
 
-.header-content p {
-    font-size: 1.2rem;
+header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 /* Navigation Links Styles */
 .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-links li {
-    margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem; /* Add padding for better clickable area */
+  border-radius: 5px; /* Slightly rounded corners for the links */
 }
 
 .nav-links li a:hover {
-    color: #d89c56;
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
 }
 
 /* Menu Toggle (for smaller screens) */
@@ -229,25 +233,22 @@ footer {
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1>Our Wedding</h1>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#countdown">Countdown</a></li>
-                <li><a href="#locations">Locations</a></li>
-                <li><a href="#transportation">Transportation</a></li>
-                <li><a href="#gifting">Gifting</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <p>Join us for a special day</p>
-        </div>
-    </header>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#transportation">Transportation</a></li>
+        <li><a href="#gifting">Gifting</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Celebrating Our Love</h1>
+      <p>Join us for a day filled with joy and happiness</p>
+    </div>
+  </header>
 
     <main>
         <section id="countdown">
@@ -284,20 +285,34 @@ footer {
                 </div>
             </div>
         </section>
-
         <section id="transportation">
-            <h2>Transportation and Parking</h2>
-            <select id="transportation-options">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
+          <h2>Transportation and Parking</h2>
+          <select id="transportation-options">
+            <option value="" disabled selected>Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
             </select>
-            <div id="transportation-details" class="details-box">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-            </div>
+          <div id="transportation-details" class="details-box" style="display: none;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          </div>
         </section>
 
+        <script>
+const selectElement = document.getElementById("transportation-options");
+const detailsBox = document.getElementById("transportation-details");
+
+selectElement.addEventListener("change", function() {
+  if (selectElement.value === "option1") {
+    detailsBox.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Option 1 details here.";
+    detailsBox.style.display = "block";
+  } else if (selectElement.value === "option2") {
+    detailsBox.textContent = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
+    detailsBox.style.display = "block";
+  } else {
+    detailsBox.style.display = "none";
+  }
+});
+          </script>
         <section id="gifting">
             <h2>Gifting</h2>
             <img src="https://via.placeholder.com/600x400" alt="Gifting">
