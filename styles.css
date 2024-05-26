@@ -5,6 +5,7 @@ margin: 0;
 padding: 0;
 background: #f8f4e6;
 color: #333;
+overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styles */
@@ -13,6 +14,7 @@ background-color: #556B2F;
 color: white;
 padding: 2rem 0; /* Adjusted for better spacing with menu */
 text-align: center;
+width: 100%; /* Ensure header covers full width */
 }
 
 header nav {
