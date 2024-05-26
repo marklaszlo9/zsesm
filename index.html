@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zsuzsi & Márk</title>
-    <link rel="stylesheet" href="css/countstyle.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Our Wedding</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <h1>Zsuzsi & Márk</h1>
-    </header>
-
-    <section>
-        <h2>Visszaszámlálás</h2>
-        <div class="container">
-          <div class="count">
-            <div class="countd">
-              <span id="days">00</span>
-              NAP
-            </div>
-
-            <div class="countd">
-              <span id="hours">00</span>
-              ÓRA
-            </div>
-
-            <div class="countd">
-              <span id="minutes">00</span>
-              PERC
-            </div>
-
-            <div class="countd">
-              <span id="seconds">00</span>
-              MÁSOPERC
-            </div>
-          </div>
+        <nav>
+            <ul>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="#gifting">Gifting</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Our Wedding</h1>
+            <p>Join us for a special day</p>
         </div>
-            
+    </header>
+    <main>
+        <section id="countdown">
+            <h2>Countdown to Our Wedding</h2>
+            <div id="countdown-timer">Loading...</div>
+        </section>
+        <section id="locations">
+            <h2>Locations</h2>
+            <div class="location-list">
+                <div class="location-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Lunch Location">
+                    <h3>Lunch</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <a href="https://maps.google.com/?q=Lunch+Location" target="_blank">View on Google Maps</a>
+                </div>
+                <div class="location-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Kikero Location">
+                    <h3>Kikero</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <a href="https://maps.google.com/?q=Kikero+Location" target="_blank">View on Google Maps</a>
+                </div>
+                <div class="location-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Church Location">
+                    <h3>Church</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <a href="https://maps.google.com/?q=Church+Location" target="_blank">View on Google Maps</a>
+                </div>
+                <div class="location-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Party Location">
+                    <h3>Party</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <a href="https://maps.google.com/?q=Party+Location" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+        </section>
 
-        <h2>Venue</h2>
-        <p id="venue">Insert details about the venue here.</p>
+        <section id="transportation">
+            <h2>Transportation and Parking</h2>
+            <select id="transportation-options">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+            <div id="transportation-details" class="details-box">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+            </div>
+        </section>
 
-        <h2>Music</h2>
-        <p id="music">Share your favorite songs or playlist for the wedding.</p>
-    </section>
-    <script src="js/count.js"></script>
+        <section id="gifting">
+            <h2>Gifting</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Gifting">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        </section>
+
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Schedule">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <img src="https://via.placeholder.com/600x400" alt="FAQ">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Our Wedding | Designed with love</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
-
 </html>
