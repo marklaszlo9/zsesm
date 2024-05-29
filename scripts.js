@@ -1,4 +1,3 @@
-// Countdown Timer (same as the previous one)
 document.addEventListener('DOMContentLoaded', function() {
     // Countdown Timer
     const countdownElement = document.getElementById('countdown-timer');
@@ -14,12 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
         if (timeRemaining >= 0) {
-            countdownElement.innerHTML = `
-                <div class="countdown-box">${days} <span>Days</span></div>
-                <div class="countdown-box">${hours} <span>Hours</span></div>
-                <div class="countdown-box">${minutes} <span>Minutes</span></div>
-                <div class="countdown-box">${seconds} <span>Seconds</span></div>
-            `;
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
         } else {
             clearInterval(countdownInterval);
             countdownElement.innerHTML = "The event has started!";
@@ -54,6 +51,4 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('active');
         }
     }
-
-
 });

@@ -8,31 +8,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 
+
 </head>
 <body>
 
   <header>
     <nav>
       <ul class="nav-links">
-        <li><a href="#countdown">Countdown</a></li>
-        <li><a href="#locations">Locations</a></li>
+        <li><a href="#countdown">Visszaszámlálás</a></li>
+        <li><a href="#locations">Helyszîn</a></li>
         <li><a href="#transportation">Transportation</a></li>
         <li><a href="#gifting">Gifting</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#schedule">Idorend</a></li>
+        <li><a href="#faq">GYIK</a></li>
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Celebrating Our Love</h1>
+      <h1>Zsuzsi és Márk</h1>
       <p>Join us for a day filled with joy and happiness</p>
     </div>
+
   </header>
 
     <main>
-        <section id="countdown">
-            <h2>Countdown to Our Wedding</h2>
-            <div id="countdown-timer">Loading...</div>
-        </section>
+
+      <section id="countdown">
+  <h2>Countdown to Our Wedding</h2>
+  <div id="countdown-timer">
+      <div class="countdown-box">
+          <div id="days">00</div>
+          <span>Nap</span>
+      </div>
+      <div class="countdown-box">
+          <div id="hours">00</div>
+          <span>Óra</span>
+      </div>
+      <div class="countdown-box">
+          <div id="minutes">00</div>
+          <span>Perc</span>
+      </div>
+      <div class="countdown-box">
+          <div id="seconds">00</div>
+          <span>Másodperc</span>
+      </div>
+  </div>
+</section>
 
         <section id="locations">
             <h2>Locations</h2>
@@ -123,7 +143,9 @@ selectElement.addEventListener("change", function() {
     <footer>
     <p>© 2024 Our Wedding | Designed with love</p>
   </footer>
-
+  <script src="assets/web/assets/jquery/jquery.min.js" asyncasync></script>
     <script src="scripts.js"></script>
+    <script src="assets/countdown/jquery.countdown.min.js"async></script>
+
 </body>
 </html>
