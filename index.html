@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Our Wedding</title>
+    <title>Zsuzsi és Márk</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -25,7 +25,7 @@
     </nav>
     <div class="header-content">
       <h1>Zsuzsi és Márk</h1>
-      <p>Join us for a day filled with joy and happiness</p>
+      <p>Szeretettel várunk és reméljük hatalmasat fogunk bulizni!</p>
     </div>
 
   </header>
@@ -33,7 +33,7 @@
     <main>
 
       <section id="countdown">
-  <h2>Countdown to Our Wedding</h2>
+  <h2>Visszaszámlálás az esküvőig</h2>
   <div id="countdown-timer">
       <div class="countdown-box">
           <div id="days">00</div>
@@ -55,40 +55,42 @@
 </section>
 
         <section id="locations">
-            <h2>Locations</h2>
+            <h2>Helyszînek</h2>
             <div class="location-list">
                 <div class="location-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Lunch Location">
-                    <h3>Lunch</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!4v1717229400164!6m8!1m7!1sx7rNDb4krxz258gBkLgmJg!2m2!1d46.40322148902849!2d18.17071847549113!3f3.5345836574968983!4f-0.1509903420547971!5f0.6890707190119567" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Ebéd</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <a href="https://maps.google.com/?q=Lunch+Location" target="_blank">View on Google Maps</a>
+                    <a href="https://maps.app.goo.gl/hoiiNPDXBZ6yx3fx6" target="_blank">Megnyitás Google Mapsen</a>
                 </div>
                 <div class="location-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Kikero Location">
-                    <h3>Kikero</h3>
+                    <img src="./haz.jpg" alt="Kikero Location">
+                    <h3>Kikérő</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <a href="https://maps.google.com/?q=Kikero+Location" target="_blank">View on Google Maps</a>
+                    <a href="https://maps.app.goo.gl/Z3DCqQAT7Q9QbwCQ6" target="_blank">Megnyitás Google Mapsen</a>
                 </div>
                 <div class="location-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Church Location">
-                    <h3>Church</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!4v1717230692464!6m8!1m7!1sZSO3792Y4eMxqmc_sjuKkA!2m2!1d46.33036953092179!2d18.13407524309666!3f27.348933754744053!4f9.884703536745775!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Templom</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <a href="https://maps.google.com/?q=Church+Location" target="_blank">View on Google Maps</a>
+                    <a href="https://maps.app.goo.gl/GUtXnyZkZPSWnAZK7" target="_blank">Megnyitás Google Mapsen</a>
                 </div>
                 <div class="location-item">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1716732713893!6m8!1m7!1sQml4DGQgh_gbNOcuxKQI7Q!2m2!1d46.34776547554629!2d18.15665120920826!3f311.33295846409084!4f-8.318896877700453!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <h3>Party</h3>
+                    <h3>Polgári szertartás és buli</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <a href="https://maps.google.com/?q=Party+Location" target="_blank">View on Google Maps</a>
+                    <a href="https://maps.google.com/?q=Party+Location" target="_blank">Megnyitás Google Mapsen</a>
                 </div>
             </div>
         </section>
         <section id="transportation">
-          <h2>Transportation and Parking</h2>
+          <h2>Szállás és transzfer</h2>
           <select id="transportation-options">
-            <option value="" disabled selected>Select an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
+            <option value="" disabled selected>Válassz egy opciót</option>
+            <option value="option1">Gunarasi Ifjúsági szállás</option>
+            <option value="option2">Gyöngy Apartman</option>
+            <option value="option3">Kokaspajta</option>
+            <option value="option4">Otthon alszom</option>
             </select>
           <div id="transportation-details" class="details-box" style="display: none;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
@@ -106,19 +108,22 @@ selectElement.addEventListener("change", function() {
   } else if (selectElement.value === "option2") {
     detailsBox.textContent = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
     detailsBox.style.display = "block";
-  } else {
+  } 
+  else if (selectElement.value === "option3") {
+    detailsBox.textContent = "Option 3 tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
+    detailsBox.style.display = "block";
+  }
+  else if (selectElement.value === "option4") {
+    detailsBox.textContent = "Option4 incididunt ut labore et dolore magna aliqua. Option 2 details here.";
+    detailsBox.style.display = "block";
+  }else {
     detailsBox.style.display = "none";
   }
 });
           </script>
-        <section id="gifting">
-            <h2>Gifting</h2>
-            <img src="https://via.placeholder.com/600x400" alt="Gifting">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-        </section>
 
         <section id="schedule">
-            <h2>Schedule</h2>
+            <h2>Időrend</h2>
             <ul>
                 <li>12:00 Ebéd - Opcionális</li>
                 <li>15:30 Vendégvárás</li>
@@ -133,19 +138,74 @@ selectElement.addEventListener("change", function() {
             </ul>
         </section>
 
+
+
         <section id="faq">
-            <h2>FAQ</h2>
-            <img src="https://via.placeholder.com/600x400" alt="FAQ">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+          <h2>Gyakran Ismételt Kérdések</h2>
+          <ul id="faq-container">
+            <script>
+              const faqData = [
+                  { question: "Mikor lesz az ajándékozás?", answer: "Menyasszonytánc során." },
+                  { question: "Sosem voltam még sátras, kültéri eskövőn, hogy készüljek?", answer: "Igen, van elegendő parkoló a helyszíneken." },
+                  { question: "Meddig tart a buli?", answer: "Hajnalig tart a buli, de természetesen bármikor távozhattok." }
+              ];
+
+              const faqContainer = document.getElementById("faq-container");
+
+              faqData.forEach(faq => {
+                  const faqItem = document.createElement("li");
+                  faqItem.classList.add("faq-item");
+                  faqItem.innerHTML = `
+                      <span class="question">${faq.question}</span>
+                      <p class="answer" style="display: none;">${faq.answer}</p>
+                  `;
+                  faqContainer.appendChild(faqItem);
+
+                  faqItem.addEventListener("click", () => {
+                      faqItem.querySelector(".answer").style.display = faqItem.querySelector(".answer").style.display === "none" ? "block" : "none";
+                  });
+              });
+          </script>
+          </ul>
+
+          <style>
+            .details-box{
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px; /* Optional for rounded corners */
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+              margin-bottom: 30px;
+            }
+
+
+            #faq-container {
+                list-style: none;
+                padding: 0;
+            }
+
+            .faq-item {
+                border-bottom: 1px solid #ddd; 
+                padding: 15px 0;    
+                cursor: pointer;
+            }
+
+            .question {
+                font-weight: bold;
+                display: block;
+            }
+
+            .answer {
+                margin-top: 5px;  
+            }
+          </style>
         </section>
+
 
     </main>
     <footer>
-    <p>© 2024 Our Wedding | Designed with love</p>
+    <p>© Zsuzsi és Márk| Designed with love</p>
   </footer>
-  <script src="assets/web/assets/jquery/jquery.min.js" asyncasync></script>
     <script src="scripts.js"></script>
-    <script src="assets/countdown/jquery.countdown.min.js"async></script>
 
 </body>
 </html>
