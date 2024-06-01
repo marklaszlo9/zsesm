@@ -103,7 +103,14 @@ const detailsBox = document.getElementById("transportation-details");
 
 selectElement.addEventListener("change", function() {
   if (selectElement.value === "option1") {
-    detailsBox.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Option 1 details here.";
+    detailsBox.textContent = `A szobákat déltől lehet elfoglalni.
+12:00-13:30 között ebéd a szálláson. Itt egy finom bográcsos pörkölt fog rátok várni.
+Ebéd után készülődés
+15:10-kor megérkezik a szállás elé a transzfer, ami mindenkit elvisz a kikérő helyszínére.
+15:30-kor elkezdődik a kikérő.
+15:45-15:50 Elindulunk a templomba (kb 300 méter, nagyjából 5-10 perc alatt érünk oda)
+Az éjszaka folyamán, a buli után pedig 2 kisbusz szállítja haza az embereket a szállásra.
+Lehetőség szerint éljetek a transzfert és akkor nem kell az autóval törődni.`;
     detailsBox.style.display = "block";
   } else if (selectElement.value === "option2") {
     detailsBox.textContent = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
@@ -175,6 +182,8 @@ selectElement.addEventListener("change", function() {
               border-radius: 10px; /* Optional for rounded corners */
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
               margin-bottom: 30px;
+              white-space: pre-line; /* Preserve newlines as line breaks */
+}
             }
 
 
