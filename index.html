@@ -17,8 +17,8 @@
       <ul class="nav-links">
         <li><a href="#countdown">Visszaszámlálás</a></li>
         <li><a href="#locations">Helyszîn</a></li>
-        <li><a href="#transportation">Transportation</a></li>
-        <li><a href="#schedule">Idorend</a></li>
+        <li><a href="#transportation">Szállás és transzfer</a></li>
+        <li><a href="#schedule">Időrend</a></li>
         <li><a href="#faq">GYIK</a></li>
       </ul>
     </nav>
@@ -103,7 +103,7 @@ const detailsBox = document.getElementById("transportation-details");
 selectElement.addEventListener("change", function() {
   if (selectElement.value === "option1") {
     detailsBox.textContent = `A szobákat déltől lehet elfoglalni.
-12:00-13:30 között ebéd a szálláson. Itt egy finom bográcsos pörkölt fog rátok várni.
+12:00-13:00 között ebéd a szálláson. Itt egy finom bográcsos pörkölt fog rátok várni.
 Ebéd után készülődés
 15:10-kor megérkezik a szállás elé a transzfer, ami mindenkit elvisz a kikérő helyszínére.
 15:30-kor elkezdődik a kikérő.
@@ -112,11 +112,25 @@ Az éjszaka folyamán, a buli után pedig 2 kisbusz szállítja haza az embereke
 Lehetőség szerint éljetek a transzfert és akkor nem kell az autóval törődni.`;
     detailsBox.style.display = "block";
   } else if (selectElement.value === "option2") {
-    detailsBox.textContent = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
+    detailsBox.textContent = `A szobákat ebéd után lehet elfoglalni. A szobabeosztást a helyszínen fogjátok meglátni. 
+12:00-13:00 között ebéd a következő helyszínen: Dombóvár, Tó u. 10 - Itt egy finom bográcsos pörkölt fog rátok várni. 
+Ebéd után: Szoba elfoglalása és készülődés
+15:20-kor indulás a kikérő helyszínére - ez körülbelül egy 7-8 perces séta
+Kérünk mindenkit, hogy próbáljon gyalog jönni.
+15:30-kor elkezdődik a kikérő. Cím: 7361 Kaposszekcső, Kossuth utca 14
+15:45-15:50 Elindulunk a templomba (kb 300 méter, nagyjából 5-10 perc alatt érünk oda)
+Lehetőség szerint éljetek a transzfer lehetőségével és akkor nem kell az autóval törődni.`;
     detailsBox.style.display = "block";
   } 
   else if (selectElement.value === "option3") {
-    detailsBox.textContent = "Option 3 tempor incididunt ut labore et dolore magna aliqua. Option 2 details here.";
+    detailsBox.textContent = `A szobákat ebéd után lehet elfoglalni. A szobabeosztást a helyszínen fogjátok meglátni. 
+12:00-13:00 között ebéd a következő helyszínen: Dombóvár, Tó u. 10 - Itt egy finom bográcsos pörkölt fog rátok várni. 
+Ebéd után: Szoba elfoglalása és készülődés
+15:20-kor indulás a kikérő helyszínére - ez körülbelül egy 7-8 perces séta
+Kérünk mindenkit, hogy próbáljon gyalog jönni.
+15:30-kor elkezdődik a kikérő. Cím: 7361 Kaposszekcső, Kossuth utca 14
+15:45-15:50 Elindulunk a templomba (kb 300 méter, nagyjából 5-10 perc alatt érünk oda)
+Lehetőség szerint éljetek a transzfer lehetőségével és akkor nem kell az autóval törődni.`;
     detailsBox.style.display = "block";
   }
   else if (selectElement.value === "option4") {
